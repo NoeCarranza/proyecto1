@@ -6,7 +6,7 @@
 .navbar-collapse {
   align-items: center;
   justify-content: space-between;
-  font-family:"Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 20px;
 }
 
@@ -18,7 +18,6 @@ section {
   justify-content: center;
   align-content: center;
 }
-
 
 /*HERO**/
 .hero {
@@ -106,12 +105,11 @@ section {
   height: 550px;
   border: 10px;
   color: rgb(221, 221, 221);
-
 }
 .experiencia-titulo {
   font-size: 25px;
   font-weight: bold;
-  margin: 10px, 10px,20px,10px;
+  margin: 10px, 10px, 20px, 10px;
   font-family: "Yeseva One", cursive;
   color: black;
   border: 20px;
@@ -123,7 +121,7 @@ section {
   font-size: 20px;
   color: rgb(2, 32, 46);
   border: 20px;
-  padding:10px;
+  padding: 10px;
   margin-top: 20px;
 }
 
@@ -135,12 +133,10 @@ section {
   margin: 10px;
   font-family: "Yeseva One", cursive;
   color: rgb(221, 221, 221);
-  
 }
 .diseño-texto {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
-
 }
 
 /*CARRUSEL**/
@@ -167,7 +163,7 @@ section {
   color: rgb(2, 32, 46);
   border: 10px;
   padding: 20px;
-  margin:auto;
+  margin: auto;
 }
 .referencias {
   display: flex;
@@ -220,8 +216,7 @@ section {
   color: rgb(221, 221, 221);
   background-color: rgb(2, 32, 46);
   text-align: center;
-  border-color:30px rgb(2, 32, 46);
-
+  border-color: 30px rgb(2, 32, 46);
 }
 
 /*FORMULARIO**/
@@ -237,7 +232,6 @@ section {
   text-align: center;
   font-family: "Yeseva One", cursive;
   font-size: 50px;
- 
 }
 
 .contact-text {
@@ -284,7 +278,6 @@ section {
 /*footer**/
 footer {
   min-height: 500px;
-
 }
 
 .bi-balloon-heart {
@@ -312,40 +305,40 @@ footer {
   border: 3px solid white;
   border-radius: 50%;
   transition: all 0.2s ease-in;
-  text-decoration: none
+  text-decoration: none;
 }
 
-.icono-redes i{
+.icono-redes i {
   color: white;
   font-size: 30px;
   transition: 0.2s ease-in;
 }
 
-.icono-redes a:hover{
-  background-color:white;
+.icono-redes a:hover {
+  background-color: white;
   border: 3px solid rgb(2, 32, 46);
 }
-.icono-redes a:hover i{
+.icono-redes a:hover i {
   color: rgb(2, 32, 46);
 }
 
-.derechos-de-autor{
- font-size: 15px;
- color: rgb(187, 187, 187);
- padding: 20px;
+.derechos-de-autor {
+  font-size: 15px;
+  color: rgb(187, 187, 187);
+  padding: 20px;
 }
 /* ADAPTABLE RESPONSIVO**/
 @media screen and (mad-witch: 767px) {
-  .living estilo 1 img-fluid {
+  .living estilo  img-fluid {
     max-width: 200px;
   }
 }
 
-.living estilo 2 img-fluid {
+.living estilo  img-fluid {
   max-width: 200px;
 }
 
-.living estilo 3 img-fluid {
+.living estilo  img-fluid {
   max-width: 200px;
 }
 
@@ -354,5 +347,3 @@ footer {
     display: none;
   }
 }
-
-
