@@ -78,8 +78,10 @@ section {
   background-color: rgb(221, 221, 221);
   text-align: center;
   color: rgb(2, 32, 46);
-  border: 10px;
+  border: 20px;
   padding: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }
 
 .seccion-media {
@@ -88,16 +90,20 @@ section {
   border: 20px;
   color: rgb(2, 32, 46);
   border: 10px;
-  padding: 50px;
+  padding: 70px;
 }
 .seccion-titulo {
   font-family: "Yeseva One", cursive;
-  padding: 40px;
+  padding: 10px;
+  text-align: center;
+  font-size:60px;
 }
 .seccion-texto {
-  font-family: "Quicksand", sans-serif;
-  padding: 40px;
-  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  padding: 20px;
+  border: 10px;
+  padding: 60px;
 }
 
 /*EXPERIENCIA**/
@@ -107,7 +113,7 @@ section {
   border: 40px;
 }
 .experiencia .row div {
-  padding: 10px;
+  padding: 20px;
   height: 550px;
   border: 10px;
   color: rgb(221, 221, 221);
@@ -126,11 +132,11 @@ section {
 
 .experiencia-texto {
   font-family: "Quicksand", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(2, 32, 46);
   border: 20px;
-  padding: 10px;
-  margin-bottom: 30px;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
 /* DISEÑO**/
