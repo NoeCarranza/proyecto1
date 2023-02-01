@@ -3,13 +3,58 @@ $(document).ready(function () {
     url: "https://randomuser.me/api/",
     dataType: "json",
     success: function (data) {
-      document.getElementById("nombre").innerHTML =$("#nombre").text(data)
-   
-  
-    
+      //FOTO
 
+      document.getElementById("fotoperfil").setAttribute = data.results[0].pictur;
 
-      console.log(data);
+      //NOMBRE
+
+      $("#nombre").text(data.results[0].name.first);
+
+      //APELLIDO
+
+      $("#apellido").text(data.results[0].name.last);
+
+      //EDAD
+
+      document.getElementById("edad").textContent = data.results[0].dob.age;
+
+      //TELEFONO
+
+      document.getElementById("telefono").textContent = data.results[0].phone;
+
+      //CELULAR
+
+      document.getElementById("celular").textContent = data.results[0].cell;
+
+      //MAIL
+
+      $("#mail").text(data.results[0].email);
+
+      //PAIS
+
+      $("#pais").text(data.results[0].location.country);
+
+      //ESTADO
+
+      $("#estado").text(data.results[0].location.state);
+
+      //CIUDAD
+
+      document.getElementById("ciudad").textContent =
+        data.results[0].location.city;
+
+      //CALLE
+
+      $("#calle").text(data.results[0].location.street.name);
+
+      //NUMERO
+      document.getElementById("numero").textContent =
+        data.results[0].location.street.number;
     },
   });
 });
+
+fetch("https://randomuser.me/api/")
+  .then((response) => response.json())
+  .then((data) => console.log(data));

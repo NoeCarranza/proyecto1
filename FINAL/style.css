@@ -20,26 +20,32 @@ section {
 }
 
 /*HERO**/
+
 .hero {
   background-color: rgb(2, 32, 46);
   min-height: 450px;
   text-align: center;
   border: 40px;
+  align-items: center;
 }
 .hero-center h1 {
-  font-size: 40px;
+  font-size: 50px;
   align-items: center;
   color: antiquewhite;
   font-family: "Yeseva One", cursive;
   border: 20px;
+  text-align: center;
+  margin: 5px;
 }
 
 .hero-center h2 {
-  font-size: 20px;
-  color: rgb(185, 185, 185);
-  font-family: "Quicksand", sans-serif;
-  border: 10px;
-  padding: 10px;
+  font-size: 25px;
+  color: rgb(243, 242, 242);
+  font-family: "Montserrat", sans-serif;
+  border: 20px;
+  text-align: center;
+  align-items: center;
+  margin: 5px;
 }
 
 .hero-imagen-perfil {
@@ -61,11 +67,11 @@ section {
 }
 
 .seccion-obscura {
-  color: rgb(221, 221, 221);
-  background-color: rgb(2, 32, 46);
+ background-color: rgb(2, 32, 46);
   text-align: center;
   border: 10px;
   padding: 20px;
+  color:rgb(221, 221, 221);
 }
 
 .seccion-clara {
@@ -105,6 +111,8 @@ section {
   height: 550px;
   border: 10px;
   color: rgb(221, 221, 221);
+  margin: auto;
+
 }
 .experiencia-titulo {
   font-size: 25px;
@@ -122,7 +130,7 @@ section {
   color: rgb(2, 32, 46);
   border: 20px;
   padding: 10px;
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 /* DISEÑO**/
@@ -138,16 +146,6 @@ section {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
 }
-
-/*CARRUSEL**/
-/*.carrusel-encabezado {
-  font-family: "Quicksand", sans-serif;
-  font-size: 20px;
-  color: rgb(2, 32, 46);
-  text-align: center;
-  align-items: center;
-  background-color: rgb(2, 32, 46);
-}**/
 
 /*REFERENCIAS**/
 
@@ -329,16 +327,16 @@ footer {
 }
 /* ADAPTABLE RESPONSIVO**/
 @media screen and (mad-witch: 767px) {
-  .living estilo  img-fluid {
+  .living estilo1 img-fluid {
     max-width: 200px;
   }
 }
 
-.living estilo  img-fluid {
+.living estilo2 img-fluid {
   max-width: 200px;
 }
 
-.living estilo  img-fluid {
+.living estilo img-fluid {
   max-width: 200px;
 }
 
