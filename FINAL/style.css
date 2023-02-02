@@ -48,7 +48,7 @@ section {
   margin: 5px;
 }
 
-.hero-imagen-perfil {
+.fotoperfil {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -67,11 +67,11 @@ section {
 }
 
 .seccion-obscura {
- background-color: rgb(2, 32, 46);
+  background-color: rgb(2, 32, 46);
   text-align: center;
   border: 10px;
   padding: 20px;
-  color:rgb(221, 221, 221);
+  color: rgb(221, 221, 221);
 }
 
 .seccion-clara {
@@ -96,7 +96,7 @@ section {
   font-family: "Yeseva One", cursive;
   padding: 10px;
   text-align: center;
-  font-size:60px;
+  font-size: 60px;
 }
 .seccion-texto {
   font-family: "Montserrat", sans-serif;
@@ -118,7 +118,6 @@ section {
   border: 10px;
   color: rgb(221, 221, 221);
   margin: auto;
-
 }
 .experiencia-titulo {
   font-size: 25px;
@@ -132,13 +131,25 @@ section {
 
 .experiencia-texto {
   font-family: "Quicksand", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(2, 32, 46);
   border: 20px;
   padding: 20px;
   margin-bottom: 40px;
+  font-display: flex;
+  display: inline-block;
 }
 
+.lista-desordenada {
+  list-style: none;
+}
+.lista-desordenada::before {
+  content: "❤";
+  color: rgb(2, 32, 46);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
 /* DISEÑO**/
 
 .diseño-titulo {
@@ -171,8 +182,8 @@ section {
 }
 .referencias {
   display: flex;
-  margin: 30px;
-  padding-block: 50px;
+  margin: 70px;
+  padding-block: 60px;
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
   color: rgb(2, 32, 46);
@@ -180,9 +191,9 @@ section {
   align-items: center;
   background-color: rgb(221, 221, 221);
   text-align: center;
-  border: 20px;
   color: rgb(2, 32, 46);
-  border: 10px;
+  border: 50px;
+ 
 }
 
 .referencias-titulo {
@@ -215,12 +226,25 @@ section {
   border-radius: 50%;
 }
 
+.carousel {
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+  height: 60%;
+  width: 60%;
+  justify-content: center;
+  display: center;
+  padding: 10px;
+  margin: auto;
+
+  
+}
 /*VIDEO YOUTUBE**/
 .video-remodelacion {
   color: rgb(221, 221, 221);
   background-color: rgb(2, 32, 46);
   text-align: center;
   border-color: 30px rgb(2, 32, 46);
+  padding: 30px;
 }
 
 /*FORMULARIO**/
