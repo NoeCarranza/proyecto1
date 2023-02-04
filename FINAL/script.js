@@ -5,8 +5,10 @@ $(document).ready(function () {
     success: function (data) {
       //FOTO
 
-      document.getElementById("fotoperfil").setAttribute = data.results[0].pictur;
-
+    document.getElementById("fotoperfil").src = data.results[0].picture.large;
+      
+      //console.log(document.getElementById("fotoperfil").src);
+      
       //NOMBRE
 
       $("#nombre").text(data.results[0].name.first);
