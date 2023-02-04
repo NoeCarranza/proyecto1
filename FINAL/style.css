@@ -193,7 +193,6 @@ section {
   text-align: center;
   color: rgb(2, 32, 46);
   border: 50px;
- 
 }
 
 .referencias-titulo {
@@ -227,7 +226,6 @@ section {
 }
 
 .carousel {
-  display: flex;
   font-family: "Quicksand", sans-serif;
   height: 60%;
   width: 60%;
@@ -235,8 +233,6 @@ section {
   display: center;
   padding: 10px;
   margin: auto;
-
-  
 }
 /*VIDEO YOUTUBE**/
 .video-remodelacion {
@@ -248,7 +244,57 @@ section {
 }
 
 /*FORMULARIO**/
-.seccion-formulario {
+
+.formulario{
+background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+padding: 65px;
+}
+.title {
+  font-family: "Yeseva One", cursive;
+  font-size: 50px;
+  color: rgb(2, 32, 46);
+  text-align: center;
+  padding: 20px;
+}
+
+.form_container {
+  font-family: "Quicksand", sans-serif;
+  background-color: rgba(255, 255, 255, 0.404);
+  width: 50%;
+  height: 20%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  grid-auto-columns: 70%;
+  text-align: center;
+  padding: 20px  20px 10px 20px;
+  border-radius: 10px;
+}
+
+
+
+.form_imput {
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  width: 80%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.form__cta {
+  width: 70%;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgb(2, 32, 46);
+  color: #d7d2cc;
+  border-radius: 10px;
+  margin: 20px 20px 20px 10px; 
+  height: 60px;
+}
+
+/*.seccion-formulario {
   background-color: rgb(221, 221, 221);
   text-align: center;
   border: 20px;
@@ -268,7 +314,7 @@ section {
   font-size: 25px;
 }
 
-/*FORMULARIO**/
+/*FORMULARIO
 
 .seccion-form {
   display: flex;
@@ -302,6 +348,7 @@ section {
   color: black;
   border-radius: 50%;
 }
+**/
 
 /*footer**/
 footer {
@@ -356,22 +403,5 @@ footer {
   padding: 20px;
 }
 /* ADAPTABLE RESPONSIVO**/
-@media screen and (mad-witch: 767px) {
-  .living estilo1 img-fluid {
-    max-width: 200px;
-  }
-}
 
-.living estilo2 img-fluid {
-  max-width: 200px;
-}
 
-.living estilo img-fluid {
-  max-width: 200px;
-}
-
-@media screen and (max-width: 767px) {
-  .navbar-brand {
-    display: none;
-  }
-}
