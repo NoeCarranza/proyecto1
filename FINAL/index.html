@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <!--CSS-->
   <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
@@ -50,13 +49,13 @@
             <a class="nav-link" href="#carousel">My ideas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#referencias">My references</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#makeover">Makeover</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contact me</a>
+            <a class="nav-link" href="#formulario">Contact me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#referencias">My references</a>
           </li>
       </div>
     </div>
@@ -267,8 +266,152 @@
             width="300" height="400">
         </div>
       </div>
-      <button id="boton" type="button" class="btn boton-ver">view more</button>
+      <button id="boton" type="button" class="btn boton-ver"
+        onclick="window.open('https://marketbymodernnest.com/collections/found')">View more</button>
+
+
+      <button type="button" class="btn btn-danger boton-descuento" id="liveToastBtn">Get a discount!</button>
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <i class="fa-solid fa-tags"></i>
+            <strong class="me-auto"> Duis id tortor. </strong>
+
+            <small class="time">1 mins ago</small>
+
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            20% Quisque ac leo risus.
+          </div>
+          <div>
+            <img src="https://i.pinimg.com/564x/be/a6/c4/bea6c465c407a1189a8fb20a3784eaf1.jpg" class="img-toast">
+          </div>
+        </div>
+      </div>
   </section>
+
+
+  <!--CAROUSEL-->
+  <div class="con-carousel">
+    <section id="carousel" class="carousel">
+      <div class="container" text-center>
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://i.pinimg.com/564x/9c/e2/51/9ce251ae91edd2c679b07f0c8bac21b1.jpg" class="d-block w-100"
+                alt="image living remodeled">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Kitchen corner remodeling</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.pinimg.com/564x/ad/78/e7/ad78e7b765c9c34be85c1ea084784d68.jpg" class="d-block w-100"
+                alt="remodeled kitchen image">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Kitchen remodeling</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.pinimg.com/564x/ce/53/38/ce533848c603f09a73f9b7df79ab428d.jpg" class="d-block w-100"
+                alt="remodeled yard image">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Yard remodeling</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  <!--video-->
+  <div id="makeover" class="video-remodelacion">
+    <h1 class="seccion-titulo"> Makeover Kitchen</h1>
+    <iframe width="900" height="555" src="https://www.youtube.com/embed/qG4MekXGDCM" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <!--Formulario-->
+  <form class="formulario" id="formulario">
+    <h2 class="title">Contact me!</h2>
+    <div class="form_container">
+      <!--NOMBRE -->
+      <div class="formulario-input" id="grupo-nombre">
+        <label for="nombre" class="formulario__label"></label>
+        <div class="formulario-grupo-input">
+          <input type="text" class="form_input" placeholder="Name" name="nombre">
+          <i class="formulario-validacion-estado fa-solid fa-rectangle-xmark"></i>
+          <p class="formulario-input-error">El nombre debe contener un mínimo de 4 dígitos y sólo puede contener
+            letras.
+          </p>
+        </div>
+      </div>
+      <!--EMAIL-->
+      <div class="formulario-input" id="grupo-mail">
+        <div class="formulario-grupo-input">
+          <label for="email" class="formulario__label"></label>
+          <input type="email" class="form_input" placeholder="your@email.com" name="mail">
+          <i class="formulario-validacion-estado fa-solid fa-rectangle-xmark"></i>
+          <p class="formulario-input-error">El mail sólo puede contener letras, números, puntos y guiones.</p>
+        </div>
+      </div>
+      <!--TELEFONO-->
+      <div class="formulario-input" id="grupo-telefono">
+        <label for=" telefono" class="formulario__label"></label>
+        <div class="formulario-grupo-input">
+          <input type="Phone" class="form_input" placeholder="xxx-xxxx" name="telefono">
+          <i class="formulario-validacion-estado fa-solid fa-rectangle-xmark"></i>
+          <p class="formulario-input-error">El número debe contener números y el máximo es de 14 dígitos. </p>
+        </div>
+      </div>
+      <!--MENSAJE-->
+      <div class="formulario-input" id="grupo-mensaje">
+        <label for="mensaje" class="formulario__label"></label>
+        <div class="formulario-grupo-input">
+          <textarea class="form_input form_input--mensaje" placeholder="Your message:" name="mensaje"></textarea>
+          <i class="formulario-validacion-estado-mensaje fa-solid fa-rectangle-xmark"></i>
+          <p class="formulario-input-error">El mensaje debe contener un mínimo de 16 dígitos y sólo puede contener
+            letras y números.</p>
+        </div>
+      </div>
+
+      <!--mensaje error-->
+      <div class="formulario-mensaje-error" id="formulario-mensaje-error">
+        <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error: </b> Por favor complete todos los campos.</p>
+      </div>
+      <!--BOTON ENVIAR-->
+      <div class="formulario-input formulario-input-grupo-btn-enviar">
+        <button type="submit" value="Send" class="form__btn">Send</button>
+        <p class="formulario-mensaje-exito" id="formulario-mensaje-exito">El formulario se envió correctamente.-</p>
+      </div>
+    </div>
+    </div>
+
+  </form>
 
   <!--REFERENCIAS-->
 
@@ -301,38 +444,38 @@
           <!--Referencia-->
           <div style="display: flex">
             <i class="bi bi-file-person"></i>
-            <p class="Referencia-1">Erika Martin</p>
+            <p class="Referencia-1">Tim Bennett</p>
           </div>
           <div style="display: flex">
             <i class="bi bi-phone"></i>
-            <p>(+54)346-785324</p>
+            <p>0477-528-443</p>
           </div>
           <div style="display: flex">
             <i class="bi bi-envelope-open-heart"></i>
-            <p> Erika@martin.com</p>
+            <p> Tim.bennett@example.com</p>
           </div>
           <div style="display: flex">
             <i class="bi bi-instagram"></i>
-            <p> Erica-MartinOk</p>
+            <p> Tim.bennett</p>
           </div>
         </div>
         <div class="col-12 col-md-3">
           <!--Referencia-->
           <div style="display: flex">
             <i class="bi bi-file-person"></i>
-            <p class="Referencia-1">Erika Martin</p>
+            <p class="Referencia-1">Katrina Frazier</p>
           </div>
           <div style="display: flex">
             <i class="bi bi-phone"></i>
-            <p>(+54)346-785324</p>
+            <p>0487-392-997</p>
           </div>
           <div style="display: flex">
             <i class="bi bi-envelope-open-heart"></i>
-            <p> Erika@martin.com</p>
+            <p> Katrina.frazier@example.com</p>
           </div>
           <div style="display: flex">
             <i class="bi bi-instagram"></i>
-            <p> Erica-MartinOk</p>
+            <p> Katrina.frazier</p>
           </div>
 
 
@@ -342,103 +485,40 @@
           <!--Referencia-->
           <div style="display: flex">
             <i class="bi bi-file-person"></i>
-            <p class="Referencia-1">Erika Martin</p>
+            <p class="Referencia-1">Madhavi Heerema</p>
           </div>
           <div style="display: flex">
             <i class="bi bi-phone"></i>
-            <p>(+54)346-785324</p>
+            <p>"(06) 94363582"</p>
           </div>
           <div style="display: flex">
             <i class="bi bi-envelope-open-heart"></i>
-            <p> Erika@martin.com</p>
+            <p> Madhavi.heerema@example.com</p>
           </div>
           <div style="display: flex">
             <i class="bi bi-instagram"></i>
-            <p> Erica-MartinOk</p>
+            <p> Madhavi-heerema</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!--CAROUSEL-->
-  <section id="carousel" class="carousel display: flex; align-items: center; justify-content: center; ">
-    <div class="container" text-center>
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://i.pinimg.com/564x/09/af/ab/09afab157b4606dd7fb2696d136b451e.jpg" class="d-block w-100"
-              alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First proyect</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://i.pinimg.com/564x/ad/78/e7/ad78e7b765c9c34be85c1ea084784d68.jpg" class="d-block w-100"
-              alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://i.pinimg.com/564x/ce/53/38/ce533848c603f09a73f9b7df79ab428d.jpg" class="d-block w-100"
-              alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-
-  </section>
-
-  <!--video-->
-  <div id="makeover" class="video-remodelacion">
-    <h1 class="seccion-titulo"> Makeover Kitchen</h1>
-    <iframe width="900" height="555" src="https://www.youtube.com/embed/qG4MekXGDCM" title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
+  <!--DROPDOWN-->
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Browser
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item" href="#sobre-mi">Know me</a></li>
+      <li><a class="dropdown-item" href="#experiencias">My Carrer</a></li>
+      <li><a class="dropdown-item" href="#diseño">My proyects</a></li>
+      <li><a class="dropdown-item" href="#carousel">My ideas</a></li>
+      <li><a class="dropdown-item" href="#makeover">Makeover</a></li>
+      <li><a class="dropdown-item" href="#formulario">Contact me</a></li>
+      <li><a class="dropdown-item" href="#referencias">My references</a></li>-->
+    </ul>
   </div>
-
-  <!--Formulario-->
-  <form class="formulario" id="contacto"  action="https://formspree.io/f/mnqyjygk" method="POST">
-    <h2 class="title">Contact me!</h2>
-    <div class="form_container">
-      <div class="form_containter">
-        <input type="text" class="form_imput" placeholder="Name" name="name">
-        <input type="Email" class="form_imput" placeholder="Email" name="email">
-        <input type="Phone" class="form_imput" placeholder="Phone" name="phone">
-        <textarea class="form_imput form_imput--message" placeholder="Message:" name="message"></textarea>
-        <input type="submit" value="Send" class="form__cta">
-
-      </div>
-    </div>
-
-  </form>
-
 
   <!--Pie de página (Footer)-->
   <footer class="seccion-obscura d-flex flex-column align-items-center justify-content-center">
@@ -469,11 +549,13 @@
   <!--random-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="formulario.js"> </script>
+  <script type="text/javascript" src="toast.js"> </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
 </body>
 

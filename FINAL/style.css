@@ -106,6 +106,49 @@ section {
   padding: 60px;
 }
 
+.boton-descuento{
+  text-align: center;
+  border: 20px;
+  color: rgb(2, 32, 46);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+
+}
+
+.toast-container{
+  display: block;
+}
+.img-toast{
+  display:block;
+  height: 50%;
+  width: 50%;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+}
+
+.me-auto{
+  font-family: bold "Montserrat", sans-serif;
+  display:flex;
+  color:#bb2929;
+
+}
+.time{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  display:block;
+  color:black;
+}
+.toast-body{
+
+  font-weight: bold;
+  display:block;
+  color:#304352;
+  font-weight: bold;
+  border: 2px;
+  font-family: "Yeseva One", cursive;
+  font-size: 20px;
+}
 /*EXPERIENCIA**/
 .seccion-experiencia {
   padding: 40px;
@@ -174,7 +217,7 @@ section {
   align-items: center;
   background-color: rgb(221, 221, 221);
   text-align: center;
-  border: 20px;
+  border: 200px;
   color: rgb(2, 32, 46);
   border: 10px;
   padding: 20px;
@@ -193,6 +236,7 @@ section {
   text-align: center;
   color: rgb(2, 32, 46);
   border: 50px;
+
 }
 
 .referencias-titulo {
@@ -224,7 +268,9 @@ section {
   color: black;
   border-radius: 50%;
 }
-
+.con-carousel{
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
 .carousel {
   font-family: "Quicksand", sans-serif;
   height: 60%;
@@ -245,9 +291,12 @@ section {
 
 /*FORMULARIO**/
 
-.formulario{
-background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
-padding: 65px;
+.formulario {
+  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+  padding: 40px;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 .title {
   font-family: "Yeseva One", cursive;
@@ -260,95 +309,174 @@ padding: 65px;
 .form_container {
   font-family: "Quicksand", sans-serif;
   background-color: rgba(255, 255, 255, 0.404);
-  width: 50%;
-  height: 20%;
-  display: grid;
-  align-items: center;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
   justify-content: center;
-  margin: auto;
-  grid-auto-columns: 70%;
-  text-align: center;
-  padding: 20px  20px 10px 20px;
-  border-radius: 10px;
+  padding: 30px;
 }
 
+.formulario__label {
+  display: block;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+}
 
-
-.form_imput {
+.form_input {
   font-family: "Quicksand", sans-serif;
   font-size: 25px;
-  width: 80%;
-  padding: 20px;
-  margin: 10px;
   border-radius: 10px;
+  border: 3px solid transparent;
+  transition: 0.3s ease all;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+.form_input:focus {
+  border: 3px solid rgb(2, 32, 46);
+  outline: none;
+  box-shadow: 3px 0px 30px rgb(255, 255, 255 0.4);
 }
 
-.form__cta {
-  width: 70%;
+.formulario-input-error {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  display: none;
+  margin-bottom: 0;
+
+}
+
+.formulario-input-error-activo {
+  display: block;
+}
+
+.formulario-input{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.form_input--mensaje{
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  height: 70px;
+}
+
+
+.formulario-grupo-input {
+  justify-content: center;
+}
+
+.formulario-validacion-estado {
+  font-size: 40px;
+  z-index: 100;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+  position: absolute;
+  right: 28%;
+  margin: 2px;
+  visibility: hidden;
+}
+
+.formulario-validacion-estado-mensaje{
+  font-size: 40px;
+  z-index: 100;
+  opacity: 1;
+  position: absolute;
+  right: 28%;
+  margin-top: 13px;
+  padding: 2px;
+  visibility: hidden;
+  
+}
+
+.formulario-mensaje-error {
+  display: none;
+  justify-content: center;
+  gap: 10px;
+  font-size: 25px;
+  background-color: #304352;
+  border-radius: 5px;
+  color: #d7d2cc;
+  height: 45px;
+  text-align: center;
+  width: 700px;
+  align-items: center;
+  margin-left: 370px;
+
+}
+
+.form__btn {
+  width: 30%;
   font-size: 30px;
   font-weight: bold;
   background-color: rgb(2, 32, 46);
   color: #d7d2cc;
   border-radius: 10px;
-  margin: 20px 20px 20px 10px; 
+  margin: 20px 20px 20px 10px;
   height: 60px;
+  cursor: pointer;
 }
 
-/*.seccion-formulario {
-  background-color: rgb(221, 221, 221);
-  text-align: center;
-  border: 20px;
-  color: rgb(2, 32, 46);
-  border: 10px;
-  padding: 50px;
-}
-.contact-me {
-  text-align: center;
-  font-family: "Yeseva One", cursive;
-  font-size: 50px;
+.form__btn:hover {
+  box-shadow: 3px 0px 30px rgb(99, 99, 99, 2);
 }
 
-.contact-text {
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
+.formulario-mensaje-exito {
+  display: none;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bold;
   font-size: 25px;
 }
 
-/*FORMULARIO
-
-.seccion-form {
+.formulario-mensaje-exito-activo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  margin: 10px;
-  text-align: center;
-  font-size: 20px;
 }
-.seccion-Mensaje {
-  margin: 20px;
-  font-size: 20px;
-  padding: 15px;
+/*ESTILOS DE VALIDACION DE FORMULARIO**/
+
+.formulario-input-correcto .formulario-validacion-estado{
+  color: rgb(35, 189, 4);
+
+}
+.formulario-input-correcto .formulario-validacion-estado{
+  color: rgb(35, 189, 4);
+
 }
 
-.fa-address-card {
-  font-size: 30px;
-  color: black;
-  border-radius: 50%;
+.formulario-input-incorrecto .formulario-validacion-estado{
+  color: #bb2929;
+
 }
 
-.fa-mobile-screen-button {
-  font-size: 30px;
-  color: black;
-  border-radius: 50%;
+.formulario-input-incorrecto .formulario-validacion-estado-mensaje{
+  color: #bb2929;
+
 }
-.fa-envelope {
-  font-size: 30px;
-  color: black;
-  border-radius: 50%;
+
+.formulario-input-incorrecto .form_input{
+  border: 3px solid #bb2929;
+
 }
-**/
+
+
+/* BOTON REGRESAR**/
+.dropdown{
+  font-size: 25px;
+  padding: 20px;
+  font-family: "Quicksand", sans-serif;
+  background-color: rgb(2, 32, 46);
+  display: grid;
+  place-content: center;
+}
 
 /*footer**/
 footer {
